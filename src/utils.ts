@@ -13,5 +13,5 @@ export async function fetchInput(day: string, sessionCookie: string) {
       },
     }
   );
-  return res.data.split("\n") as string[];
+  return res.data.trim().split("\n") as string[];
 }
